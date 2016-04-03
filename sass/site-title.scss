@@ -1,0 +1,38 @@
+@import "utilities/variables";
+
+/**
+ * Site title styling
+ */
+
+.site-branding {
+    background-color: $primary-color;
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-title {
+    font-family: $title-font;
+    color: $heading-color;
+    height: 30%;
+    margin:1em 1em 1em 1em;
+    text-decoration: none;
+}
+
+.site-title > a {
+    text-decoration: none;
+}
+
+.site-description {
+    font-family: $primary-font;
+    color: $tertiary-color;
+}
+
+a:hover {
+    color: $secondary-color;
+}
+
+a, a:visited {
+  color: inherit;
+}

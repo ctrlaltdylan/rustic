@@ -1,0 +1,32 @@
+@import "utilities/variables";
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    height: 100%;
+    padding-top: 1em;
+}
+
+aside > section {
+    padding: 0 0 0 .5em;
+
+    ul {
+        list-style-type: none;
+    }
+
+    .widget-title {
+        color: $secondary-color;
+        margin-bottom: 0em;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 .5em 0em; }
+
+    li {
+        color: white;
+    }
+}

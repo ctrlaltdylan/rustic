@@ -1,0 +1,52 @@
+@import "utilities/variables";
+
+/**
+ * Entry Styling
+ */
+
+article {
+    width: $content-items-width;
+    background-color: $secondary-color;
+    margin: 1em 1em 1em 1em;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: $title-font;
+    color: $heading-color;
+    background-color: $primary-color;
+}
+
+.entry-title {
+    margin-left: .5em;
+}
+
+.entry-meta {
+    margin-top: .3em;
+    margin-right: .3em;
+    font-family: $primary-font;
+}
+
+.posted-on {
+    color: $secondary-color;
+}
+
+.entry-content {
+    padding: .5em .5em .5em .5em;
+}
+
+.entry-footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $primary-color;
+
+    span {
+        margin: 1em .5em 1em .5em;
+        text-decoration: none;
+        background-color: $tertiary-color;
+        color: $secondary-color;
+        border: .3em solid $tertiary-color;
+        padding: 0em 1em 0em 1em;
+    }
+}

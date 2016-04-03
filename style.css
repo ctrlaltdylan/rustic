@@ -1,3 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway);
+/**
+ * Entry Styling
+ */
+article {
+  width: 90%;
+  background-color: #FFC0B6;
+  margin: 1em 1em 1em 1em; }
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  background-color: #7F3F35; }
+
+.entry-title {
+  margin-left: .5em; }
+
+.entry-meta {
+  margin-top: .3em;
+  margin-right: .3em;
+  font-family: "Raleway", sans-serif; }
+
+.posted-on {
+  color: #FFC0B6; }
+
+.entry-content {
+  padding: .5em .5em .5em .5em; }
+
+.entry-footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #7F3F35; }
+  .entry-footer span {
+    margin: 1em .5em 1em .5em;
+    text-decoration: none;
+    background-color: #FF7D6A;
+    color: #FFC0B6;
+    border: 0.3em solid #FF7D6A;
+    padding: 0em 1em 0em 1em; }
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway);
+/**
+ * Comments section styling
+ */
+#comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%; }
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway);
+html,
+body {
+  height: 100%; }
+
+.site {
+  height: inhert; }
+
+#primary {
+  width: 80%;
+  padding-bottom: 2em; }
+
+.site-content {
+  width: 100%;
+  display: flex; }
+
+.site-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway);
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #7F3F35;
+  height: 5%;
+  width: 100%;
+  padding: 1em 1em 1em 1em;
+  color: white; }
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway);
+#front-page-container {
+  height: 6000px;
+  width: 100%; }
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway);
+#primary-menu {
+  /**
+     * Removing a secondary <a> inside of a navgation's <li>
+     * Not sure why wordpress is stupid like that
+     */ }
+  #primary-menu a[rel~="home"] {
+    display: none; }
+  #primary-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #CC6454; }
+  #primary-menu li {
+    float: left; }
+  #primary-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif; }
+  #primary-menu li a:hover:not(.active) {
+    background-color: #FFC0B6; }
+  #primary-menu .active {
+    background-color: #FFC0B6; }
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway);
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7F3F35;
+  height: 100%;
+  padding-top: 1em; }
+
+aside > section {
+  padding: 0 0 0 .5em; }
+  aside > section ul {
+    list-style-type: none; }
+  aside > section .widget-title {
+    color: #FFC0B6;
+    margin-bottom: 0em; }
+  aside > section ul,
+  aside > section ol {
+    margin: 0 0 .5em 0em; }
+  aside > section li {
+    color: white; }
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway);
+/**
+ * Site title styling
+ */
+.site-branding {
+  background-color: #7F3F35;
+  padding: 1em 1em 1em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.site-title {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  height: 30%;
+  margin: 1em 1em 1em 1em;
+  text-decoration: none; }
+
+.site-title > a {
+  text-decoration: none; }
+
+.site-description {
+  font-family: "Raleway", sans-serif;
+  color: #FF7D6A; }
+
+a:hover {
+  color: #FFC0B6; }
+
+a, a:visited {
+  color: inherit; }
+
 /*
 Theme Name: rustic
 Theme URI: http://underscores.me/
@@ -42,19 +216,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway);
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
 body {
   margin: 0; }
 
-article,
 aside,
 details,
 figcaption,
@@ -227,7 +400,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -300,7 +473,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #7F605B;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote:before,
@@ -456,10 +629,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
-
-a:visited {
-  color: purple; }
+  text-decoration: none; }
 
 a:hover,
 a:focus,
@@ -649,9 +819,6 @@ a:active {
 .sticky {
   display: block; }
 
-.hentry {
-  margin: 0 0 1.5em; }
-
 .byline,
 .updated:not(.published) {
   display: none; }
@@ -771,7 +938,3 @@ object {
 
 .gallery-caption {
   display: block; }
-
-.site-title {
-  font-family: 'Dancing Script', cursive;
-  background-color: tomato; }

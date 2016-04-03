@@ -44,19 +44,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
-
-$primary-color: #7F3F35;
-$secondary-color: #FFC0B6;
-$tertiary-color: #FF7D6A;
-$quaternary-color: #7F605B;
-$quinary-color: #CC6454;
+@import "utilities/variables";
 
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: $primary-font;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -65,7 +59,7 @@ body {
 	margin: 0;
 }
 
-article,
+// article,
 aside,
 details,
 figcaption,
@@ -275,7 +269,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: $primary-font;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -360,7 +354,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: $quaternary-color; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -533,11 +527,12 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	// color: royalblue;
+	text-decoration: none;
 }
 
 a:visited {
-	color: purple;
+	// color: purple;
 }
 
 a:hover,
@@ -780,7 +775,7 @@ a:active {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	// margin: 0 0 1.5em;
 }
 
 .byline,
@@ -926,9 +921,4 @@ object {
 
 .gallery-caption {
 	display: block;
-}
-
-.site-title {
-	font-family: 'Dancing Script', cursive;
-	background-color: $primary-color
 }

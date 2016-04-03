@@ -1,0 +1,13 @@
+@import "utilities/variables";
+
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    overflow:hidden;
+    background-color: $primary-color;
+    height: 5%;
+    width: 100%;
+    padding: 1em 1em 1em 1em;
+    color: $heading-color;
+}

@@ -1,0 +1,13 @@
+@import "utilities/variables";
+
+/**
+ * Comments section styling
+ */
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: $content-items-width;
+}
